@@ -3324,7 +3324,11 @@ input, select, textarea {
 
 /* dark mode */
 
-.night-mode *{
+.dark-mode *{
     background: rgb(37, 37, 37);
     color: white;
+}
+
+#toggle-mode {
+	cursor: pointer;
 }

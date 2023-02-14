@@ -163,12 +163,15 @@
 
 // dark mode
 
-let darkMode = document.querySelector("#night-mode")
-let html = document.querySelector("html")
-let moon = document.querySelector(".fa-moon");
+const toggle = document.getElementById('toggle-mode')
+const icon = document.getElementById('icon')
+const body = document.querySelector('body')
 
-
-darkMode.onclick = () => {
-    html.classList.toggle("night-mode")
-	moon.remove()
-}
+toggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  if (icon.classList.contains('fa-moon')) {
+    icon.classList.replace('fa-moon', 'fa-sun')
+  } else {
+    icon.classList.replace('fa-sun', 'fa-moon')
+  }
+})
