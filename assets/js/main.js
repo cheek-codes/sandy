@@ -157,3 +157,18 @@
 		});
 
 })(jQuery);
+
+
+
+
+// dark mode
+
+let darkMode = document.querySelector("#night-mode")
+let html = document.querySelector("html")
+let moon = document.querySelector(".fa-moon");
+
+
+darkMode.onclick = () => {
+    html.classList.toggle("night-mode")
+	moon.remove()
+}

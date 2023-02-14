@@ -3319,3 +3319,12 @@ input, select, textarea {
 .caution {
 	color: red;
 }
+
+
+
+/* dark mode */
+
+.night-mode *{
+    background: rgb(37, 37, 37);
+    color: white;
+}
