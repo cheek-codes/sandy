@@ -163,15 +163,50 @@
 
 // dark mode
 
+// const toggle = document.getElementById('toggle-mode')
+// const icon = document.getElementById('icon')
+// const body = document.querySelector('body')
+
+// toggle.addEventListener('click', () => {
+//   body.classList.toggle('dark-mode');
+//   if (icon.classList.contains('fa-moon')) {
+//     icon.classList.replace('fa-moon', 'fa-sun')
+//   } else {
+//     icon.classList.replace('fa-sun', 'fa-moon')
+//   }
+// })
+
+
 const toggle = document.getElementById('toggle-mode')
 const icon = document.getElementById('icon')
 const body = document.querySelector('body')
+const cover = document.getElementById('cover')
 
-toggle.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  if (icon.classList.contains('fa-moon')) {
+function setMode() {
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add('dark-mode')
     icon.classList.replace('fa-moon', 'fa-sun')
+	cover.setAttribute("src", "images/cover-dark.png")
+
   } else {
+    body.classList.remove('dark-mode')
     icon.classList.replace('fa-sun', 'fa-moon')
   }
+}
+
+toggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode')
+  if (icon.classList.contains('fa-moon')) {
+    icon.classList.replace('fa-moon', 'fa-sun')
+	cover.setAttribute("src", "images/cover-dark.png")
+
+  } else {
+    icon.classList.replace('fa-sun', 'fa-moon')
+	cover.setAttribute("src", "images/cover.png")
+  }
 })
+
+window.addEventListener('load', setMode)
+window.addEventListener('resize', setMode)
+window.addEventListener('online', setMode)
+window.addEventListener('offline', setMode)
