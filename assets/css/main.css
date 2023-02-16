@@ -3337,7 +3337,7 @@ input, select, textarea {
 	color: rgb(255, 0, 0);
 }
 
-#header {
+.dark-mode #header {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
