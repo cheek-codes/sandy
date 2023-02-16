@@ -3403,3 +3403,13 @@ input, select, textarea {
 .dark-mode #email {
 	color: #fff;
 }
+
+.dark-mode a {
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	border-bottom: solid 1px #e4e4e4;
+	color:#4aabff;
+	text-decoration: none;
+}
