@@ -3055,7 +3055,7 @@ input, select, textarea {
 
 				#titleBar .toggle {
 					text-decoration: none;
-					height: 4em;
+					height: 2em;
 					position: absolute;
 					top: 0;
 					width: 6em;
@@ -3235,7 +3235,7 @@ input, select, textarea {
 		/* Header Panel */
 
 			#titleBar .toggle {
-				height: 4em;
+				height: 2em;
 				width: 6em;
 			}
 
