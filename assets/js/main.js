@@ -163,7 +163,6 @@
 
 // dark mode
 
-
 const toggle = document.getElementById('toggle-mode')
 const icon = document.getElementById('icon')
 const body = document.querySelector('body')
